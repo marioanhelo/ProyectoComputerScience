@@ -1,15 +1,13 @@
 const discosTable = document.getElementById('tableDiscos');
-const btnSearch = document.getElementById('btn-search');
-const closebtn = document.getElementById('closebtn');
 const inputSearch = document.getElementById('search');
-const cells = document.getElementsByTagName('tr');
+const rows = document.getElementsByTagName('tr');
 const buttonRegistro = document.getElementById("registroDisco");
 buttonRegistro.addEventListener("click", registroDisco)
 inputSearch.addEventListener('keyup', (e) => {
     let query = e.target.value
     let search = new RegExp(query, "i")
-    for (let i = 0; i < cells.length; i++) {
-        let valor = cells[i]
+    for (let i = 0; i < rows.length; i++) {
+        let valor = rows
         if (search.test(valor.innerText)) {
             valor.classList.remove('ocultar')
         } else {
