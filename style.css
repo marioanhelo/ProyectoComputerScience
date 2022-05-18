@@ -25,3 +25,9 @@ body, html {
 #searchResults{
     display:none;
 }
+.ocultar{
+    display:none;
+}
+.mostrar{
+    display:table-row
+}
