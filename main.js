@@ -25,11 +25,11 @@ listResults = []
 const buttonRegistro = document.getElementById("registroDisco");
 buttonRegistro.addEventListener("click",getDatosDisco)
 function getDatosDisco(){
-
+    let UUID = Date.now()
     let nombreDisco = document.getElementById("inputName").value
     let precioDisco = document.getElementById("inputPrice").value
     let yearDisco = document.getElementById("inputYear").value
-    const disco =new Disco(listaDiscos.length,nombreDisco,precioDisco,yearDisco)
+    const disco =new Disco(UUID,nombreDisco,precioDisco,yearDisco)
     listaDiscos.push(disco)
     swal({
         title: "Success",
