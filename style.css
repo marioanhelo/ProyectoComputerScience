@@ -22,9 +22,6 @@ body, html {
     transform: translate(-50%, -50%);
     color: white;
 }
-#searchResults{
-    display:none;
-}
 .ocultar{
     display:none;
 }

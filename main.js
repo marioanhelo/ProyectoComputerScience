@@ -7,7 +7,7 @@ inputSearch.addEventListener('keyup', (e) => {
     let query = e.target.value
     let search = new RegExp(query, "i")
     for (let i = 0; i < rows.length; i++) {
-        let valor = rows
+        let valor = rows[i]
         if (search.test(valor.innerText)) {
             valor.classList.remove('ocultar')
         } else {
