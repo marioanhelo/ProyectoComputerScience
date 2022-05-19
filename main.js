@@ -94,7 +94,7 @@ function deleteItem(ID) {
 function renderTable() {
     var bodyTable = document.getElementById("discosList")
     bodyTable.innerHTML = "";
-    let = rowBody = ""
+    let rowBody = ""
     for (let i = 0; i < listaDiscos.length; i++) {
         rowBody += `<tr><td>${listaDiscos[i].ID}</td><td>${listaDiscos[i].Name}</td><td>$${listaDiscos[i].Price}</td><td>${listaDiscos[i].Year}</td><td><button type="button" class="btn btn-sm btn-light" onclick="confirmDelete('${listaDiscos[i].ID}')"><i class="fa fa-trash-o fa-2x text-danger" aria-hidden="true"></i></button></td></tr>`
     }
